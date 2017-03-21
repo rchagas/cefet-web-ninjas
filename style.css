@@ -10,12 +10,32 @@ img[src*="logo"]{
   width: 200px;
 }
 
+img[src*="logo"]:hover{
+  width:220px;
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 45%;
+    width: 200px;
+  }
+
+  to {
+    margin-left: -30%;
+    width: 200px;
+  }
+}
+
 img, iframe{
   display: block;
   margin-left: auto;
   margin-right: auto;
   padding: 2%
 }
+
+
 
 h1,h2{
   font-family: 'Jim Nightshade', cursive;
@@ -57,4 +77,6 @@ strong,strong + em{
 .nota{
 	opacity: 0.5;
 }
+
+
 
