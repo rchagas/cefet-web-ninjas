@@ -1,4 +1,12 @@
-#img_logo{
+body{
+  margin: 5%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#B01818), to(#000000));
+  background: -moz-linear-gradient(top, #B01818, #000000);
+  filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#B01818', EndColorStr='#000000');
+  color: white;
+}
+
+img[src*="logo"]{
   width: 200px;
 }
 
@@ -6,6 +14,7 @@ img, iframe{
   display: block;
   margin-left: auto;
   margin-right: auto;
+  padding: 2%
 }
 
 h1,h2{
@@ -19,16 +28,33 @@ a:link{
 a:visited{
   color: #DCDCDC;
   text-decoration: line-through;
+  opacity: 0.1;
 }
+
 a:hover{
   font-size:20px;
   font-style:italic;
 }
 a:active{
-
+	font-weight: bolder;
 }
-a[href*="http:"]{
+a[href*="http"]{
   background-image: url(img/globo.png);
   background-repeat: no-repeat;
   padding-left:20px;
 }
+
+a[href*="http"]:hover{
+	background-size: 20px;
+}
+
+strong,strong + em{
+  color: gray;
+  font-size: 20px;
+  font-weight:bold;
+}
+
+.nota{
+	opacity: 0.5;
+}
+
